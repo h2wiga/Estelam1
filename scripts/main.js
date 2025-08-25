@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 resultMessage.textContent = `کد ملی ${nationalId} تا این لحظه در احکام اجرایی جهت توقیف نیامده است.`;
                 resultMessage.className = 'final-message';
                 resultMessage.classList.remove('hidden');
-            }, 2000); // تاخیر ۲ ثانیه‌ای برای شبیه‌سازی پردازش
+            }, 9600); // تاخیر ۲ ثانیه‌ای برای شبیه‌سازی پردازش
         });
     }
 });
