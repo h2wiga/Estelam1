@@ -79,8 +79,7 @@ h2 {
     background-color: #003366;
 }
 
-
-}    h2 { font-size: 0.9rem; }    h1 { font-size: 1.2rem; }    }        max-width: 120px;    .logo-placeholder img {    }        padding: 12px 2vw 20px 2vw;        max-width: 98vw;    main {@media (max-width: 600px) {/* ریسپانسیو */}    display: none;.hidden {}    font-weight: bold;    color: #28a745;    margin: 24px 0;    font-size: 1.2rem;    text-align: center;.final-message {}    font-weight: bold;    color: #333;    margin: 24px 0;    font-size: 1.2rem;    text-align: center;.loading-message {
+/* پیام‌ها */
 .loading-message {
     text-align: center;
     font-size: 1.2rem;
@@ -88,7 +87,6 @@ h2 {
     color: #333;
     font-weight: bold;
 }
-
 .final-message {
     text-align: center;
     font-size: 1.2rem;
@@ -96,9 +94,9 @@ h2 {
     color: #28a745;
     font-weight: bold;
 }
+
 .hidden {
     display: none !important;
-}
 }
 
 /* ریسپانسیو */
@@ -112,4 +110,3 @@ h2 {
     }
     h1 { font-size: 1.2rem; }
     h2 { font-size: 0.9rem; }
-}
