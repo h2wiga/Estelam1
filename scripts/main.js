@@ -1,43 +1,35 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const nationalIdInput = document.getElementById('national-id-input');
-    const submitButton = document.getElementById('submit-button');
-    const loadingMessage = document.getElementById('loading-message');
-    const resultMessage = document.getElementById('result-message');
-    const main = document.querySelector('main');
+document.addEventListener('DOMContentLoaded', function () {
+    // مخفی کردن پیام لودینگ در شروع
+    document.getElementById('loading-message').classList.add('hidden');
+    document.getElementById('result-message').classList.add('hidden');
 
-    submitButton.addEventListener('click', function() {
-        const nationalId = nationalIdInput.value.trim();
+    document.getElementById('check-button').addEventListener('click', function () {
+        const nationalId = document.getElementById('national-id').value.trim();
+        const loading = document.getElementById('loading-message');
+        const result = document.getElementById('result-message');
+        const main = document.querySelector('main');
 
         // اعتبارسنجی ساده کد ملی (۱۰ رقم)
         if (!/^\d{10}$/.test(nationalId)) {
-            resultMessage.textContent = 'کد ملی معتبر وارد کنید';
-            resultMessage.className = 'final-message';
-            loadingMessage.classList.add('hidden');
+            result.textContent = 'کد ملی معتبر وارد کنید';
+            result.className = 'final-message';
+            result.classList.remove('hidden');
+            loading.classList.add('hidden');
+            main.classList.remove('blurred');
             return;
         }
 
         // نمایش لودینگ و بلور
-        loadingMessage.classList.remove('hidden');
-        resultMessage.classList.add('hidden');
+        loading.classList.remove('hidden');
+        result.classList.add('hidden');
         main.classList.add('blurred');
 
         setTimeout(() => {
-            loadingMessage.classList.add('hidden');
-
-
-
-
-
-
-
-});    });        }, 16000);            resultMessage.classList.remove('hidden');            resultMessage.className = 'final-message';            resultMessage.textContent = `کد ملی ${nationalId} تا این لحظه دسترسی مبنی بر قرار بازداشت صادر نگردیده است`;            main.classList.remove('blurred');                loadingMessage.classList.add('hidden');
-                main.classList.remove('blurred');
-                resultMessage.textContent = `کد ملی ${nationalId} تا این لحظه دسترسی مبنی بر قرار بازداشت صادر نگردیده است`;
-                resultMessage.className = 'final-message';
-                resultMessage.classList.remove('hidden');
-            }, 16000); // 16 seconds loading effect
-        } else {
-            alert('لطفا کد ملی خود را وارد کنید');
-        }
+            loading.classList.add('hidden');
+            main.classList.remove('blurred');
+            result.textContent = `کد ملی ${nationalId} تا این لحظه در احکام اجرایی جهت توقیف نیامده است.`;
+            result.className = 'final-message';
+            result.classList.remove('hidden');
+        }, 16000);
     });
 });
