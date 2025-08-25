@@ -30,3 +30,5 @@ document.addEventListener('DOMContentLoaded', function () {
             result.textContent = `کد ملی ${nationalId} تا این لحظه در احکام اجرایی جهت توقیف نیامده است.`;
             result.className = 'final-message';
             result.classList.remove('hidden');
+            
+<div id="loading-message" class="hidden">همکار گرامی لطفا صبر کنید</div>
