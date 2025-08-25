@@ -1,0 +1,146 @@
+body {
+    font-family: 'Vazir', 'Arial', sans-serif;
+    background: url('https://uploadkon.ir/uploads/d67c25_25113486-705.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* افکت بلور برای main */
+.blurred {
+    filter: blur(6px);
+    pointer-events: none;
+    user-select: none;
+}
+
+/* وسط‌چین کردن محتوا */
+main {
+    max-width: 500px;
+    margin: 60px auto 0 auto;
+    background: rgba(255,255,255,0.92);
+    border-radius: 18px;
+    box-shadow: 0 0 24px #0002;
+    padding: 32px 24px 40px 24px;
+    text-align: center;
+}
+
+/* لوگو تمام عرض */
+.logo-placeholder img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    margin: 0 auto 24px auto;
+    display: block;
+}
+
+/* فونت بزرگ‌تر برای عنوان */
+h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-size: 1.1rem;
+    margin-bottom: 28px;
+    font-weight: normal;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0;
+    gap: 8px;
+}
+
+.input-container input {
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    width: 220px;
+}
+
+.input-container button {
+    padding: 12px 22px;
+    font-size: 1.1rem;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.input-container button:hover {
+    background-color: #003366;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}    h2 { font-size: 0.9rem; }    h1 { font-size: 1.2rem; }    }        max-width: 120px;    .logo-placeholder img {    }        padding: 12px 2vw 20px 2vw;        max-width: 98vw;    main {@media (max-width: 600px) {/* ریسپانسیو */}    display: none;.hidden {}    font-weight: bold;    color: #28a745;    margin: 24px 0;    font-size: 1.2rem;    text-align: center;.final-message {}    font-weight: bold;    color: #333;    margin: 24px 0;    font-size: 1.2rem;    text-align: center;.loading-message {
+.loading-message {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 24px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.final-message {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 24px 0;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ریسپانسیو */
+@media (max-width: 600px) {
+    main {
+        max-width: 98vw;
+        padding: 12px 2vw 20px 2vw;
+    }
+    .logo-placeholder img {
+        max-width: 120px;
+    }
+    h1 { font-size: 1.2rem; }
+    h2 { font-size: 0.9rem; }
+}
